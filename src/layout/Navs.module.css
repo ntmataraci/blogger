@@ -1,0 +1,16 @@
+
+.nav{
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    cursor:pointer;
+}
+
+.nav_alt{
+    border-top:1px solid transparent;
+}
+
+.nav_alt:hover{
+    border-top: 1px solid black;
+    }
+    

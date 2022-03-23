@@ -1,0 +1,14 @@
+
+.continue, Link, .continue:active{
+    display:inline-block;
+    margin-Left:1rem;
+    font-weight:bold;
+    cursor:pointer;
+    color:black;
+}
+
+.continue:hover{
+    color:red;
+
+    }
+    

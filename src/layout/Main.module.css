@@ -1,0 +1,15 @@
+.post_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-Content: center;
+    width: 80%;
+    margin: auto;
+    gap: 2rem;
+}
+
+.post_container_small{
+    display: flex;
+    flex-wrap: wrap;
+    justify-Content: center;
+    gap:0.5rem;
+}
