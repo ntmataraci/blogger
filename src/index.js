@@ -16,8 +16,8 @@ ReactDOM.render(
     <BrowserRouter>
     <Routes>
  <Route path="/" element={<App/>}>
-   <Route path=":postId" element={<ExpandedPost/>}/>
-   <Route path="addpost" element={<AddPost/>}/>
+   <Route path="/:postId" element={<ExpandedPost/>}/>
+   <Route path="/addpost" element={<AddPost/>}/>
    <Route path="/login" element={<LoginScreen/>}/>
    <Route path="/signup" element={<SignUpScreen/>}/>
  </Route>
