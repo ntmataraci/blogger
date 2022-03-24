@@ -22,6 +22,7 @@ const submitLogin = (e)=>{
     const username=e.target[0].value
     const pass=e.target[1].value
     setAuthInformation({username:username,pass:pass})
+
 }    
 
 
@@ -38,6 +39,7 @@ if(authInformation){
       } else {
         setTimeout( setLoginMsg("Wrong Username or Pass!")  ,3000)
         setLoginMsg("Loggining...")
+        navigate("/")
     
         // ...
       }

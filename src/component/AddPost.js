@@ -30,7 +30,7 @@ const sendingPost = (e) => {
     }
     e.target[0].value=""
     userInformContex.refreshMe(userInformContex.refreshHandler)
-    navigate("/")
+    navigate("/blogger/")
 }
 /*photo */
 const uploadFunction = async (file,photo,msg) => {

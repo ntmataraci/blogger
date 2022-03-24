@@ -5,6 +5,7 @@ import readDatabase from "../firebase/database"
 const ExpandedPost = () => {
 
     const param=useParams().postId
+    console.log(param)
 const [posts,setsPosts]=useState()
 const [filtered,setFiltered]=useState()
 
@@ -23,7 +24,7 @@ useEffect(()=>{
     return(
 <>
 {filtered&&
-<div style={{width:"50%",minWidth:"300px",display:"flex",justifyContent:"center",alignItems:"center",flexDirection:"column",margin:"auto",wordBreak:"break-all"}}>
+<div style={{width:"50%",minWidth:"300px",display:"flex",justifyContent:"center",alignItems:"center",flexDirection:"column",margin:"auto",wordBreak:"break-word"}}>
   {filtered.img? <div><img src={filtered.img} style={{maxWidth:"60%",maxHeight:"30%",minWidth:"200px"}}></img></div>:""}
 <div style={{textIndent:"2rem",lineHeight:"1.3rem",wordSpacing:"0.1rem"}}><p>{filtered.post}</p></div>
 <div style={{display:"flex",gap:"1rem",justifyContent:"flex-end",flexDirection:"row",width:"100%"}}><div>{filtered.email}</div><div>{filtered.date}</div></div>

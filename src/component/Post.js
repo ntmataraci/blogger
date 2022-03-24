@@ -69,8 +69,8 @@ useEffect(()=>{
               {item.post.length > 270
                 ? item.post.substring(0, 270) + "...":item.post}
                  {item.post.length > 270&&
-              <Link to={`/${item.id}`}>
-                <div className="continue">Continue</div>
+              <Link to={`./${item.id}`}>
+                <div className="continue">Read More</div>
               </Link>
     }
             </div>
