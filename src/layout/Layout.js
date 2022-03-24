@@ -8,7 +8,9 @@ const Layout = () => {
     return(
         <>
         <Nav/>
-        {location.pathname=="/"?
+        {console.log(location.pathname=="/blogger/")}
+        {location.pathname=="/blogger/"?
+
         <Main/>:<Outlet/>}
         </>
     )
